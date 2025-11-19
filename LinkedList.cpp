@@ -5,7 +5,7 @@ class Node
 {
 public:
     int data;
-    Node *next;
+    Node* next;
 
     Node(int val)
     {
@@ -16,8 +16,8 @@ public:
 
 class List
 {
-    Node *head;
-    Node *tail;
+    Node* head;
+    Node* tail;
 
 public:
     List()
@@ -27,7 +27,7 @@ public:
 
     void push_front(int val)
     {
-        Node *newNode = new Node(val); // Dynamic
+        Node* newNode = new Node(val); // Dynamic
         if (head == NULL)
         {
             head = tail = newNode;
